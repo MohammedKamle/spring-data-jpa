@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import java.util.List;
+
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,7 +18,8 @@ public class Application {
     CommandLineRunner commandLineRunner(StudentRepository studentRepository) {
     	return args -> {
     		Student maria = new Student("Maria", "Jones", "maria.jones@yahoo.com", 21);
-    		studentRepository.save(maria);
+    		Student alex = new Student("Alex", "Gulster", "alex.@gmail.com", 25);
+    		studentRepository.saveAll(List.of(maria,alex));
     	};
     }
 

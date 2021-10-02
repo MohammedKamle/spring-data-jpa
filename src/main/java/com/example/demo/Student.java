@@ -26,7 +26,7 @@ public class Student {
 	@Column(name = "first_name", nullable = false, columnDefinition = "TEXT")
 	private String firstName;
 	
-	@Column(name = "flast_name", nullable = false, columnDefinition = "TEXT")
+	@Column(name = "last_name", nullable = false, columnDefinition = "TEXT")
 	private String lastName;
 	
 	@Column(name = "email", nullable = false, columnDefinition = "TEXT")
