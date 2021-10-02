@@ -22,7 +22,7 @@ public class Student {
 	@GeneratedValue(strategy = SEQUENCE, generator = "student_sequence")
 	private Long id;
 	
-	// @Column will map our data tyoes to column in our database
+	// @Column will map our data types to column in our database
 	@Column(name = "first_name", nullable = false, columnDefinition = "TEXT")
 	private String firstName;
 	
