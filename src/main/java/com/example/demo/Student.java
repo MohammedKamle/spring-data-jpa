@@ -34,9 +34,9 @@ public class Student {
 	
 	@Column(name = "age", nullable = false)
 	private Integer age;
-
-	public Student(Long id, String firstName, String lastName, String email, Integer age) {
-		this.id = id;
+	
+	// We have not taken "id" here as database will automatically generate it for us.
+	public Student(String firstName, String lastName, String email, Integer age) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
